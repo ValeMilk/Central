@@ -47,14 +47,14 @@ const Index = () => {
             />
             <div className="w-px h-14 bg-border" />
             <img
-              src={logoValeFish}
-              alt="Logo ValeFish"
-              className="h-20 w-auto object-contain"
+              src={logoValeMilk}
+              alt="Logo ValeMilk"
+              className="h-20 w-auto object-contain mix-blend-multiply"
             />
             <div className="w-px h-14 bg-border" />
             <img
-              src={logoValeMilk}
-              alt="Logo ValeMilk"
+              src={logoValeFish}
+              alt="Logo ValeFish"
               className="h-20 w-auto object-contain"
             />
           </div>
