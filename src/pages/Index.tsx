@@ -43,7 +43,7 @@ const Index = () => {
             <img
               src={logoCacau}
               alt="Logo Grupo Cacau"
-              className="h-20 w-auto rounded-xl shadow-lg object-contain"
+              className="h-20 w-auto object-contain mix-blend-multiply"
             />
             <div className="w-px h-14 bg-border" />
             <img
