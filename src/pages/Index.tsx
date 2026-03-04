@@ -1,6 +1,7 @@
 import { Monitor, Map, Fish, ExternalLink } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.jpeg";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
+import logoValeMilk from "@/assets/valemilk-logo.png";
 
 const apps = [
   {
@@ -48,6 +49,12 @@ const Index = () => {
             <img
               src={logoValeFish}
               alt="Logo ValeFish"
+              className="h-20 w-auto object-contain"
+            />
+            <div className="w-px h-14 bg-border" />
+            <img
+              src={logoValeMilk}
+              alt="Logo ValeMilk"
               className="h-20 w-auto object-contain"
             />
           </div>
