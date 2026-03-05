@@ -1,0 +1,30 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 🚀 Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 72.61.62.17
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /root/central-de-app
+            ./auto-deploy.sh
+
+      - name: ✅ Deploy Status
+        if: success()
+        run: echo "Deploy concluído com sucesso!"
+
+      - name: ❌ Deploy Failed
+        if: failure()
+        run: echo "Deploy falhou! Verifique os logs."

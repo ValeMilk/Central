@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  central-de-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: central-de-app
+    ports:
+      - "8080:80"  # Mapeie para a porta que quiser na VPS
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
