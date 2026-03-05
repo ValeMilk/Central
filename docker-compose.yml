@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: central-de-app
     ports:
-      - "8080:80"  # Mapeie para a porta que quiser na VPS
+      - "8885:80"
     restart: unless-stopped
     networks:
       - app-network
