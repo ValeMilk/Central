@@ -1,4 +1,25 @@
-# Welcome to your Lovable project
+# Central de Sistemas - Grupo Cacau
+
+Portal unificado de acesso para aplicações do Grupo Cacau.
+
+## 🔗 Links
+
+**Repositório**: https://github.com/ValeMilk/Central
+**VPS**: http://72.61.62.17:8080
+
+## 🚀 Deploy Automático
+
+Este projeto está configurado para deploy automático via Docker na VPS.
+
+### Quick Start
+```powershell
+# Deploy rápido (Windows)
+.\quick-deploy.ps1 "Mensagem do commit"
+```
+
+Veja [DEPLOY-QUICK.md](DEPLOY-QUICK.md) para mais informações.
+
+---
 
 ## Project info
 
