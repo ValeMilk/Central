@@ -1,5 +1,5 @@
 import { Monitor, Map, Fish, ExternalLink } from "lucide-react";
-import logoCacau from "@/assets/logo_grupo_cacau.jpeg";
+import logoCacau from "@/assets/logo_grupo_cacau.jpg";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
 
