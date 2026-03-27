@@ -5,9 +5,9 @@ import logoValeMilk from "@/assets/valemilk-logo.png";
 
 const apps = [
   {
-    name: "Sistema CIS",
+    name: "Sistema Supply",
     description: "Sistema de gestão integrado",
-    url: "https://cis.valemilk.com.br/",
+    url: "https://supply.valemilk.com.br/",
     icon: Monitor,
     gradient: "from-primary to-secondary",
   },
