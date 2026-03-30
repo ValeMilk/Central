@@ -110,9 +110,9 @@ const Index = () => {
                   </p>
                 </div>
               </div>
-              <span className={`self-center inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gradient-to-r ${app.color} text-white text-sm font-semibold shadow-sm group-hover:shadow-md transition-all duration-300 mt-auto pt-3`}>
+              <span className={`self-center inline-flex items-center gap-1 ${app.iconColor} text-sm font-medium mt-auto pt-3 group-hover:gap-2 transition-all duration-300`}>
                 Acessar
-                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+                <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
               </span>
 
               <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${app.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 pointer-events-none`} />
