@@ -1,4 +1,4 @@
-import { Monitor, Map, Fish, ExternalLink } from "lucide-react";
+import { Monitor, Map, Fish, ExternalLink, ClipboardCheck, FileText } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.png";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
@@ -24,6 +24,20 @@ const apps = [
     url: "https://mapas.valemilk.com.br/",
     icon: Map,
     gradient: "from-primary via-secondary to-primary",
+  },
+  {
+    name: "Apontamento",
+    description: "Sistema de apontamento de horas",
+    url: "https://apontamento.valemilk.com.br/",
+    icon: ClipboardCheck,
+    gradient: "from-secondary via-primary to-secondary",
+  },
+  {
+    name: "ValeMilk PDF",
+    description: "Gerador e visualizador de PDF",
+    url: "https://valemilk-pdf.streamlit.app/",
+    icon: FileText,
+    gradient: "from-primary to-secondary",
   },
 ];
 
