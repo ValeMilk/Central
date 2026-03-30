@@ -5,8 +5,8 @@ import logoValeMilk from "@/assets/valemilk-logo.png";
 
 const apps = [
   {
-    name: "Sistema Supply",
-    description: "Sistema de gestão integrado para controle e operações",
+    name: "Supply Chain",
+    description: "Gerenciamento de informações referente aos produtos (insumos e estoque)",
     url: "https://supply.valemilk.com.br/",
     icon: Monitor,
     color: "from-blue-500 to-blue-600",
@@ -16,7 +16,7 @@ const apps = [
   },
   {
     name: "ValeFish",
-    description: "Produção ValeFish",
+    description: "Gerenciamento de informações referente as produções (aproveitamento, custos e margem)",
     url: "https://valefish.valemilk.com.br/",
     icon: Fish,
     color: "from-teal-500 to-cyan-500",
@@ -25,8 +25,8 @@ const apps = [
     hoverBorder: "hover:border-teal-200",
   },
   {
-    name: "Mapas",
-    description: "Visualização de mapas",
+    name: "Monitoramento de Entregas",
+    description: "Acompanhe rotas, itinerários e a distribuição geográfica dos clientes",
     url: "https://mapas.valemilk.com.br/",
     icon: Map,
     color: "from-indigo-500 to-violet-500",
@@ -35,8 +35,8 @@ const apps = [
     hoverBorder: "hover:border-indigo-200",
   },
   {
-    name: "Apontamento",
-    description: "Sistema de apontamento",
+    name: "Apontamentos de Frequência",
+    description: "Visualização da evolução diária da frequência e os apontamentos associados de cada gestor.",
     url: "https://apontamento.valemilk.com.br/",
     icon: ClipboardCheck,
     color: "from-emerald-500 to-green-500",
@@ -45,8 +45,8 @@ const apps = [
     hoverBorder: "hover:border-emerald-200",
   },
   {
-    name: "Agrupador Inteligente de PDFs",
-    description: "Gerador e visualizador inteligente de PDFs",
+    name: "Consolidador de Documentos",
+    description: " Unifique pedidos, notas fiscais e boletos das cargas de entrega em um único arquivo",
     url: "https://valemilk-pdf.streamlit.app/",
     icon: FileText,
     color: "from-orange-500 to-amber-500",
@@ -70,12 +70,12 @@ const Index = () => {
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
         {/* Hero section */}
         <div className="text-center mb-16 md:mb-20">
-          <div className="flex items-center justify-center gap-5 mb-8">
-            <img src={logoCacau} alt="Grupo Cacau" className="h-14 md:h-16 w-auto object-contain" />
-            <div className="w-px h-10 bg-slate-200" />
-            <img src={logoValeMilk} alt="ValeMilk" className="h-14 md:h-16 w-auto object-contain" />
-            <div className="w-px h-10 bg-slate-200" />
-            <img src={logoValeFish} alt="ValeFish" className="h-14 md:h-16 w-auto object-contain" />
+          <div className="flex flex-col items-center gap-4 mb-8">
+            <img src={logoCacau} alt="Grupo Cacau" className="h-16 md:h-20 w-auto object-contain" />
+            <div className="flex items-center gap-6">
+              <img src={logoValeMilk} alt="ValeMilk" className="h-12 md:h-14 w-auto object-contain" />
+              <img src={logoValeFish} alt="ValeFish" className="h-12 md:h-14 w-auto object-contain" />
+            </div>
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
             Central de{" "}
