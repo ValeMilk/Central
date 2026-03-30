@@ -16,7 +16,7 @@ const apps = [
   },
   {
     name: "ValeFish",
-    description: "Plataforma completa ValeFish",
+    description: "Produção ValeFish",
     url: "https://valefish.valemilk.com.br/",
     icon: Fish,
     color: "from-teal-500 to-cyan-500",
@@ -26,7 +26,7 @@ const apps = [
   },
   {
     name: "Mapas",
-    description: "Visualização de mapas e geolocalização em tempo real",
+    description: "Visualização de mapas",
     url: "https://mapas.valemilk.com.br/",
     icon: Map,
     color: "from-indigo-500 to-violet-500",
