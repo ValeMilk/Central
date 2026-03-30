@@ -58,69 +58,65 @@ const apps = [
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 relative">
+    <div className="h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-slate-50 relative flex flex-col overflow-hidden">
       {/* Background blobs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] rounded-full bg-blue-100/40 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] rounded-full bg-teal-100/30 blur-[100px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-indigo-100/20 blur-[80px]" />
       </div>
 
       {/* Main content */}
-      <main className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+      <main className="relative z-10 max-w-7xl mx-auto px-6 pt-6 pb-4 flex-1 flex flex-col">
         {/* Hero section */}
-        <div className="text-center mb-16 md:mb-20">
-          <div className="flex flex-col items-center gap-4 mb-8">
-            <img src={logoCacau} alt="Grupo Cacau" className="h-16 md:h-20 w-auto object-contain" />
-            <div className="flex items-center gap-6">
-              <img src={logoValeMilk} alt="ValeMilk" className="h-16 md:h-20 w-auto object-contain" />
-              <img src={logoValeFish} alt="ValeFish" className="h-16 md:h-20 w-auto object-contain" />
-            </div>
+        <div className="text-center mb-6">
+          <div className="flex items-center justify-center gap-6 mb-3">
+            <img src={logoCacau} alt="Grupo Cacau" className="h-12 w-auto object-contain" />
+            <div className="w-px h-8 bg-slate-200" />
+            <img src={logoValeMilk} alt="ValeMilk" className="h-12 w-auto object-contain" />
+            <div className="w-px h-8 bg-slate-200" />
+            <img src={logoValeFish} alt="ValeFish" className="h-12 w-auto object-contain" />
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
+          <h1 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
             Central de{" "}
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Sistemas
             </span>
           </h1>
-          <p className="mt-4 text-lg md:text-xl text-slate-500 max-w-md mx-auto leading-relaxed">
+          <p className="mt-1 text-sm text-slate-500">
             Acesse todas as aplicações do grupo em um só lugar
           </p>
         </div>
 
         {/* App Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 flex-1">
           {apps.map((app) => (
             <a
               key={app.name}
               href={app.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative bg-white rounded-2xl border border-slate-100 ${app.hoverBorder} p-6 transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:-translate-y-1 active:translate-y-0 active:shadow-md`}
+              className={`group relative bg-white rounded-xl border border-slate-100 ${app.hoverBorder} p-4 transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md flex flex-col`}
             >
-              {/* Icon */}
-              <div className={`w-12 h-12 rounded-xl ${app.bg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                <app.icon className={`w-6 h-6 ${app.iconColor}`} />
+              {/* Icon + Title row */}
+              <div className="flex items-center gap-3 mb-2">
+                <div className={`w-10 h-10 rounded-lg ${app.bg} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                  <app.icon className={`w-5 h-5 ${app.iconColor}`} />
+                </div>
+                <h2 className="text-sm font-bold text-slate-900 leading-tight">
+                  {app.name}
+                </h2>
               </div>
 
-              {/* Content */}
-              <h2 className="text-lg font-bold text-slate-900 mb-1.5">
-                {app.name}
-              </h2>
-              <p className="text-sm text-slate-500 leading-relaxed mb-5">
+              <p className="text-xs text-slate-500 leading-relaxed mb-3 flex-1">
                 {app.description}
               </p>
 
-              {/* Button */}
-              <div className="flex items-center justify-between">
-                <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r ${app.color} text-white text-sm font-semibold shadow-sm group-hover:shadow-md transition-all duration-300`}>
-                  Acessar
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                </span>
-              </div>
+              <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gradient-to-r ${app.color} text-white text-xs font-semibold shadow-sm group-hover:shadow-md transition-all duration-300 w-fit`}>
+                Acessar
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              </span>
 
-              {/* Hover glow */}
-              <div className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${app.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 pointer-events-none`} />
+              <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${app.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 pointer-events-none`} />
             </a>
           ))}
         </div>
@@ -128,13 +124,13 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-slate-100">
-        <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} Grupo Cacau — Todos os direitos reservados
+        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+          <p className="text-xs text-slate-400">
+            © {new Date().getFullYear()} Grupo Cacau
           </p>
           <div className="flex items-center gap-1.5">
             <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            <span className="text-xs text-slate-400">{apps.length} aplicações disponíveis</span>
+            <span className="text-xs text-slate-400">{apps.length} aplicações</span>
           </div>
         </div>
       </footer>
