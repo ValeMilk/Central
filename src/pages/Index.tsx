@@ -69,25 +69,7 @@ const Index = () => {
       {/* Top bar */}
       <nav className="sticky top-0 z-50 glass shadow-sm shadow-black/[0.03]">
         <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <img
-              src={logoCacau}
-              alt="Grupo Cacau"
-              className="h-10 w-auto object-contain"
-            />
-            <div className="w-px h-6 bg-slate-200" />
-            <img
-              src={logoValeMilk}
-              alt="ValeMilk"
-              className="h-10 w-auto object-contain"
-            />
-            <div className="w-px h-6 bg-slate-200" />
-            <img
-              src={logoValeFish}
-              alt="ValeFish"
-              className="h-10 w-auto object-contain"
-            />
-          </div>
+          <span className="text-sm font-semibold text-slate-700 tracking-tight">Central de Sistemas</span>
           <div className="hidden sm:flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-xs font-medium text-slate-400">Todos os sistemas online</span>
