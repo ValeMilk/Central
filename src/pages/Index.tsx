@@ -66,17 +66,6 @@ const Index = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-indigo-100/20 blur-[80px]" />
       </div>
 
-      {/* Top bar */}
-      <nav className="sticky top-0 z-50 glass shadow-sm shadow-black/[0.03]">
-        <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
-          <span className="text-sm font-semibold text-slate-700 tracking-tight">Central de Sistemas</span>
-          <div className="hidden sm:flex items-center gap-2">
-            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="text-xs font-medium text-slate-400">Todos os sistemas online</span>
-          </div>
-        </div>
-      </nav>
-
       {/* Main content */}
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
         {/* Hero section */}
