@@ -95,23 +95,25 @@ const Index = () => {
               href={app.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group relative bg-white rounded-xl border border-slate-100 ${app.hoverBorder} p-4 transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md flex items-start gap-4`}
+              className={`group relative bg-white rounded-xl border border-slate-100 ${app.hoverBorder} p-4 transition-all duration-300 hover:shadow-lg hover:shadow-slate-200/50 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md flex flex-col items-center text-center`}
             >
-              <div className={`w-11 h-11 rounded-lg ${app.bg} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                <app.icon className={`w-5 h-5 ${app.iconColor}`} />
+              <div className="flex items-start gap-4 w-full">
+                <div className={`w-11 h-11 rounded-lg ${app.bg} flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                  <app.icon className={`w-5 h-5 ${app.iconColor}`} />
+                </div>
+                <div className="flex-1 min-w-0 text-left">
+                  <h2 className="text-base font-bold text-slate-900 leading-tight">
+                    {app.name}
+                  </h2>
+                  <p className="text-sm text-slate-500 leading-snug mt-1">
+                    {app.description}
+                  </p>
+                </div>
               </div>
-              <div className="flex-1 min-w-0">
-                <h2 className="text-base font-bold text-slate-900 leading-tight">
-                  {app.name}
-                </h2>
-                <p className="text-sm text-slate-500 leading-snug mt-1">
-                  {app.description}
-                </p>
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gradient-to-r ${app.color} text-white text-sm font-semibold shadow-sm group-hover:shadow-md transition-all duration-300 w-fit mt-2.5`}>
-                  Acessar
-                  <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-                </span>
-              </div>
+              <span className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gradient-to-r ${app.color} text-white text-sm font-semibold shadow-sm group-hover:shadow-md transition-all duration-300 mt-3`}>
+                Acessar
+                <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              </span>
 
               <div className={`absolute inset-0 rounded-xl bg-gradient-to-r ${app.color} opacity-0 group-hover:opacity-[0.03] transition-opacity duration-300 pointer-events-none`} />
             </a>
