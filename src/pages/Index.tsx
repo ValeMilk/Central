@@ -36,7 +36,7 @@ const apps = [
   },
   {
     name: "Apontamento",
-    description: "Sistema de apontamento e registro de horas",
+    description: "Sistema de apontamento",
     url: "https://apontamento.valemilk.com.br/",
     icon: ClipboardCheck,
     color: "from-emerald-500 to-green-500",
@@ -45,7 +45,7 @@ const apps = [
     hoverBorder: "hover:border-emerald-200",
   },
   {
-    name: "Agrupador de PDFs",
+    name: "Agrupador Inteligente de PDFs",
     description: "Gerador e visualizador inteligente de PDFs",
     url: "https://valemilk-pdf.streamlit.app/",
     icon: FileText,
@@ -99,11 +99,12 @@ const Index = () => {
       <main className="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
         {/* Hero section */}
         <div className="text-center mb-16 md:mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-6">
-            <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-            <span className="text-xs font-semibold text-blue-600 tracking-wide uppercase">
-              Grupo Cacau
-            </span>
+          <div className="flex items-center justify-center gap-5 mb-8">
+            <img src={logoCacau} alt="Grupo Cacau" className="h-14 md:h-16 w-auto object-contain" />
+            <div className="w-px h-10 bg-slate-200" />
+            <img src={logoValeMilk} alt="ValeMilk" className="h-14 md:h-16 w-auto object-contain" />
+            <div className="w-px h-10 bg-slate-200" />
+            <img src={logoValeFish} alt="ValeFish" className="h-14 md:h-16 w-auto object-contain" />
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
             Central de{" "}
