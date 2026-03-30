@@ -73,11 +73,11 @@ const Index = () => {
           <div className="flex flex-col items-center gap-4 mb-8">
             <img src={logoCacau} alt="Grupo Cacau" className="h-16 md:h-20 w-auto object-contain" />
             <div className="flex items-center gap-6">
-              <img src={logoValeMilk} alt="ValeMilk" className="h-12 md:h-14 w-auto object-contain" />
-              <img src={logoValeFish} alt="ValeFish" className="h-12 md:h-14 w-auto object-contain" />
+              <img src={logoValeMilk} alt="ValeMilk" className="h-16 md:h-20 w-auto object-contain" />
+              <img src={logoValeFish} alt="ValeFish" className="h-16 md:h-20 w-auto object-contain" />
             </div>
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
             Central de{" "}
             <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
               Sistemas
