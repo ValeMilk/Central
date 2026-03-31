@@ -15,7 +15,7 @@ const apps = [
     hoverBorder: "hover:border-blue-200",
   },
   {
-    name: "ValeFish",
+    name: "Controle de Produção",
     description: "Gerenciamento de informações referente as produções (aproveitamento, custos e margem)",
     url: "https://valefish.valemilk.com.br/",
     icon: Fish,
