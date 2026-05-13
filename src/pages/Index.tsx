@@ -1,4 +1,4 @@
-import { Monitor, Map, Fish, ExternalLink, ClipboardCheck, FileText, ArrowUpRight } from "lucide-react";
+import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, ArrowUpRight } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.png";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
@@ -53,6 +53,16 @@ const apps = [
     bg: "bg-orange-50",
     iconColor: "text-orange-600",
     hoverBorder: "hover:border-orange-200",
+  },
+  {
+    name: "Analytics",
+    description: "Acompanhe indicadores e dashboards analiticos do grupo em tempo real.",
+    url: "https://analytics.valemilk.com.br/",
+    icon: BarChart3,
+    color: "from-sky-500 to-cyan-500",
+    bg: "bg-sky-50",
+    iconColor: "text-sky-600",
+    hoverBorder: "hover:border-sky-200",
   },
 ];
 
