@@ -66,7 +66,7 @@ const apps = [
   },
   {
     name: "InfoVale",
-    description: "Consulte e gerencie informações personalizadas da plataforma InfoVale.",
+    description: "Acompanhe seus encartes, rebaixas e ofertas.",
     url: "https://infovale.valemilk.com.br/",
     icon: Server,
     color: "from-purple-500 to-pink-500",
