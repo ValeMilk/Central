@@ -1,4 +1,4 @@
-import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, ArrowUpRight } from "lucide-react";
+import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, Server, ArrowUpRight } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.png";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
@@ -63,6 +63,16 @@ const apps = [
     bg: "bg-sky-50",
     iconColor: "text-sky-600",
     hoverBorder: "hover:border-sky-200",
+  },
+  {
+    name: "InfoVale",
+    description: "Consulte e gerencie informações personalizadas da plataforma InfoVale.",
+    url: "https://infovale.valemilk.com.br/",
+    icon: Server,
+    color: "from-purple-500 to-pink-500",
+    bg: "bg-purple-50",
+    iconColor: "text-purple-600",
+    hoverBorder: "hover:border-purple-200",
   },
 ];
 

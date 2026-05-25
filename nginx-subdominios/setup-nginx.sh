@@ -27,6 +27,7 @@ cp supply.valemilk.com.br.conf $NGINX_DIR/
 cp valefish.valemilk.com.br.conf $NGINX_DIR/
 cp mapas.valemilk.com.br.conf $NGINX_DIR/
 cp analytics.valemilk.com.br.conf $NGINX_DIR/
+cp infovale.valemilk.com.br.conf $NGINX_DIR/
 
 # Criar links simbólicos
 echo "🔗 Ativando sites..."
@@ -35,6 +36,7 @@ ln -sf $NGINX_DIR/supply.valemilk.com.br.conf $NGINX_ENABLED/
 ln -sf $NGINX_DIR/valefish.valemilk.com.br.conf $NGINX_ENABLED/
 ln -sf $NGINX_DIR/mapas.valemilk.com.br.conf $NGINX_ENABLED/
 ln -sf $NGINX_DIR/analytics.valemilk.com.br.conf $NGINX_ENABLED/
+ln -sf $NGINX_DIR/infovale.valemilk.com.br.conf $NGINX_ENABLED/
 
 # Remover configuração default (opcional)
 if [ -f "$NGINX_ENABLED/default" ]; then
@@ -60,10 +62,11 @@ echo "   • supply.valemilk.com.br   → localhost:8886"
 echo "   • valefish.valemilk.com.br → localhost:8888"
 echo "   • mapas.valemilk.com.br    → localhost:3000"
 echo "   • analytics.valemilk.com.br → localhost:8082"
+echo "   • infovale.valemilk.com.br  → localhost:8080"
 echo ""
 echo "🔒 Para ativar HTTPS (SSL), execute:"
 echo "   apt install certbot python3-certbot-nginx"
-echo "   certbot --nginx -d central.valemilk.com.br -d supply.valemilk.com.br -d valefish.valemilk.com.br -d mapas.valemilk.com.br -d analytics.valemilk.com.br"
+echo "   certbot --nginx -d central.valemilk.com.br -d supply.valemilk.com.br -d valefish.valemilk.com.br -d mapas.valemilk.com.br -d analytics.valemilk.com.br -d infovale.valemilk.com.br"
 echo ""
 echo "📊 Ver status: systemctl status nginx"
 echo "📋 Ver logs: tail -f /var/log/nginx/*.log"
