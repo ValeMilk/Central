@@ -1,4 +1,4 @@
-import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, Server, ArrowUpRight } from "lucide-react";
+import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, Server, ArrowUpRight, DollarSign } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.png";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
@@ -73,6 +73,16 @@ const apps = [
     bg: "bg-purple-50",
     iconColor: "text-purple-600",
     hoverBorder: "hover:border-purple-200",
+  },
+  {
+    name: "ValePrice",
+    description: "Solicitações de preços para a venda",
+    url: "https://valeprice.valemilk.com.br/login",
+    icon: DollarSign,
+    color: "from-yellow-500 to-amber-500",
+    bg: "bg-yellow-50",
+    iconColor: "text-yellow-600",
+    hoverBorder: "hover:border-yellow-200",
   },
 ];
 
