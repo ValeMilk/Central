@@ -85,7 +85,7 @@ const apps = [
     hoverBorder: "hover:border-yellow-200",
   },
   {
-    name: "VaeLabs",
+    name: "ValeLabs",
     description: "Gestão microbiológicas",
     url: "https://valelabs.valemilk.com.br/",
     icon: Beaker,
