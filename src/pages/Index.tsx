@@ -1,4 +1,4 @@
-import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, Server, ArrowUpRight, DollarSign, Flask } from "lucide-react";
+import { Monitor, Map, Fish, BarChart3, ClipboardCheck, FileText, Server, ArrowUpRight, DollarSign, Beaker } from "lucide-react";
 import logoCacau from "@/assets/logo_grupo_cacau.png";
 import logoValeFish from "@/assets/Logo_ValeFish.png";
 import logoValeMilk from "@/assets/valemilk-logo.png";
@@ -88,7 +88,7 @@ const apps = [
     name: "VaeLabs",
     description: "Gestão microbiológicas",
     url: "https://valelabs.valemilk.com.br/",
-    icon: Flask,
+    icon: Beaker,
     color: "from-cyan-500 to-blue-500",
     bg: "bg-cyan-50",
     iconColor: "text-cyan-600",
